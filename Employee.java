@@ -33,9 +33,10 @@ public class Employee{
         int age = calculateAge(2025);
         // to be completed
         if (age>=16)
-         System.out.println("You can drive");
+         return (true);
         else 
-         System.out.println(16-age); 
+        System.out.println(16-age); 
+        return(false); 
     }
 
     /*
@@ -43,20 +44,19 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
-        int (unpaidHours); 
-        int (hourlyWage);
-        int totalSalary = (unpaidHours * hourlyWage);
-        int taxes = (0.3);
-        int Sum = (totalSalary * taxes);
-        int calculatePay = (totalSalary - Sum);
+        double totalSalary = (unpaidHours * hourlyWage);
+        double taxes = (00.30);
+        double Sum = (totalSalary * taxes);
+        double calculatePay = (totalSalary - Sum);
+        return(calculatePay);
     }
     
-    private String newName(Sting name){
-        String name = newName;
+    private void setName(String name){
+        fullname = name;
     }
     
     public String newName(){
-        return(newName);
+        return(fullname);
     }
     
     /*
@@ -64,9 +64,9 @@ public class Employee{
      */
     public void paySalary(){
         // to be completed
-        Get calculatePay;
+        double calculatePay;
         System.out.println("fullname" + "has received a wire transfer of" +
-        "calculatePay" + "CAD");
+        calculatePay() + "CAD");
         unpaidHours=0;
     }
 }
