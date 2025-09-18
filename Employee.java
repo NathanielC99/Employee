@@ -32,6 +32,10 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         // to be completed
+        if age>=16
+         System.out.println("You can drive");
+        else 
+         System.out.println(16-age); 
     }
 
     /*
@@ -39,12 +43,28 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
+        Get values for unpaidHours and hourlyWage
+        Set total salary to unpaidHours * hourlyWage
+        Set taxes to 30%
+        Set Sum to total salary * taxes
+        Set calculatePay to total salary - Sum
     }
-
+    private String newName(Sting name){
+        String name = newName;
+    }
+    
+    public String newName(){
+        return(newName);
+    }
+    
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
         // to be completed
+        Get calculatePay
+        System.out.println("fullname" + "has received a wire transfer of" +
+        "calculatePay" + "CAD");
+        unpaidHours=0;
     }
 }
